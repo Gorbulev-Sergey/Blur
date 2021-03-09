@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+</head>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(45deg, rgb(226, 29, 29), rgb(16, 92, 233)) fixed;
+        padding-top: 1em;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .6058);
+        backdrop-filter: blur(100px);
+    }
+</style>
+
+<body>
+    <div class="text-black"
+        style="display: flex; border-radius: .2em; backdrop-filter:blur(20px); width: 75%; background:rgba(255,255,255,.5)">
+        <div style="display: flex; flex-direction: column; padding: 1.5em;">
+            <h3 style="margin-top: 0;">Название</h3>
+            <div style="flex-grow: 1; padding-bottom: 2em;">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatem et non aut quo expedita
+                reprehenderit maxime adipisci debitis aliquam inventore quam placeat alias quidem modi, soluta ducimus
+                corporis voluptatum.
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: .8em;">
+                <div class="bg-pink text-white" style="border-radius: .3em; padding: .1em .5em;">Новости</div>
+                <div class="bg-white" style="border-radius: .3em; padding: .1em .5em;">10 мая 2020</div>
+            </div>
+        </div>
+        <div
+            style="min-width: 20%; min-height: 200px; background:url(https://i.pinimg.com/originals/8a/33/1c/8a331cece10bde587604240dec5491f5.jpg) center;background-size:cover">
+        </div>
+        <div class="bg-white"
+            style=" display: flex; flex-direction:column; justify-content: space-between;padding: 1.15em .5em 1em .5em; border-radius: 0 .2em .2em 0;">
+            <div style="display: flex; flex-direction: column;">
+                <button
+                    style="border: none; padding: .5em; border-radius: .3em; background: transparent; font-size: 1.1em;"><i
+                        class="far fa-heart"></i></button>
+                <button
+                    style="border: none; padding: .5em; border-radius: .3em; background: transparent; font-size: 1.1em;"><i
+                        class="far fa-comment-alt"></i></button>
+            </div>
+            <button
+                style="border: none; padding: .5em; border-radius: .3em; background:transparent; font-size: 1.1em;"><i
+                    class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="text-black"
+        style="display: flex; flex-direction: column; border-radius: .2em; backdrop-filter:blur(20px); width: 25%; background:rgba(255,255,255,.5); margin-top: 1em; ">
+        <div style="display: flex; flex-direction: column; padding: 1.5em;">
+            <h3 style="margin-top: 0;">Название</h3>
+            <div style="flex-grow: 1; padding-bottom: 2em;">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatem et non aut quo expedita
+                reprehenderit maxime adipisci debitis aliquam inventore quam placeat alias quidem modi, soluta ducimus
+                corporis voluptatum.
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: .8em;">
+                <div class="bg-pink text-white" style="border-radius: .3em; padding: .1em .5em;">Новости</div>
+                <div class="bg-white" style="border-radius: .3em; padding: .1em .5em;">10 мая 2020</div>
+            </div>
+        </div>
+        <div
+            style="min-width: 20%; min-height: 200px; background:url(https://i.pinimg.com/originals/8a/33/1c/8a331cece10bde587604240dec5491f5.jpg) center;background-size:cover">
+        </div>
+        <div class="bg-white"
+            style=" display: flex; flex-direction: row-reverse; justify-content: space-between;padding: .5em 1em ; border-radius: 0 0 .2em .2em;">
+            <div style="display: flex; flex-direction: row;">
+                <button
+                    style="border: none; padding: .5em; border-radius: .3em; background: transparent; font-size: 1.1em;"><i
+                        class="far fa-heart"></i></button>
+                <button
+                    style="border: none; padding: .5em; border-radius: .3em; background: transparent; font-size: 1.1em;"><i
+                        class="far fa-comment-alt"></i></button>
+            </div>
+            <button
+                style="border: none; padding: .5em; border-radius: .3em; background:transparent; font-size: 1.1em;"><i
+                    class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="text-black"
+        style="display: flex; flex-direction: column; border-radius: .2em; backdrop-filter:blur(20px); width: 75%; background:rgba(255,255,255,.5); margin: 1em 0; ">
+        <div class="bg-white"
+            style=" display: flex; flex-direction: row-reverse; justify-content: space-between; align-items:center; padding: .5em 1em ; border-radius: .2em .2em 0 0;">
+            <div style="display: flex; flex-direction: row; align-items:center">
+                <div class="bg-white" style="margin-right: .5em; font-size: .8em; border-radius: .3em; padding: .1em .5em;">10 мая 2020</div>
+                <button
+                    style="border: none; padding: .5em; border-radius: .3em; background: transparent; font-size: 1.1em;"><i
+                        class="far fa-heart"></i></button>
+                <button
+                    style="border: none; padding: .5em; border-radius: .3em; background: transparent; font-size: 1.1em;"><i
+                        class="far fa-comment-alt"></i></button>
+            </div>
+            <h3 style="margin:0; padding: 0; text-transform: uppercase ;">Название</h3>
+
+            <div style="display: flex; align-items:center">
+                <button
+                    style="border: none; padding: .5em; border-radius: .3em; background:transparent; font-size: 1.1em;"><i
+                        class="fas fa-chevron-left"></i></button>
+                <div class="bg-pink text-white"
+                    style="border-radius: .3em; padding: .1em .5em; margin-left: .5em; font-size: .8em;">Новости</div>
+            </div>
+
+        </div>
+        <div
+            style="min-width: 20%; min-height: 200px; background:url(https://i.pinimg.com/originals/8a/33/1c/8a331cece10bde587604240dec5491f5.jpg) center;background-size:cover">
+        </div>
+        <div style="display: flex; flex-direction: column; padding: 2em;">
+            <h3 style="margin-top: 0; text-align: center;" hidden>Название</h3>
+
+            <div style="flex-grow: 1; display:flex; flex-direction: column; padding-bottom: 2em;">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatem et non aut quo expedita
+                    reprehenderit maxime adipisci debitis aliquam inventore quam placeat alias quidem modi, soluta
+                    ducimus
+                    corporis voluptatum.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatem et non aut quo expedita
+                    reprehenderit maxime adipisci debitis aliquam inventore quam placeat alias quidem modi, soluta
+                    ducimus
+                    corporis voluptatum.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatem et non aut quo expedita
+                    reprehenderit maxime adipisci debitis aliquam inventore quam placeat alias quidem modi, soluta
+                    ducimus
+                    corporis voluptatum.
+                </p>
+                <img style="width: 85%; border-radius:.1em; margin: 1.5em; align-self: center;"
+                    src="https://i.pinimg.com/originals/8a/33/1c/8a331cece10bde587604240dec5491f5.jpg">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatem et non aut quo expedita
+                    reprehenderit maxime adipisci debitis aliquam inventore quam placeat alias quidem modi, soluta
+                    ducimus
+                    corporis voluptatum.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatem et non aut quo expedita
+                    reprehenderit maxime adipisci debitis aliquam inventore quam placeat alias quidem modi, soluta
+                    ducimus
+                    corporis voluptatum.
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-white"
+            style=" display: flex; flex-direction: row-reverse; justify-content: space-between;padding: .5em 1em ; border-radius: 0 0 .2em .2em;">
+            <div style="display: flex; flex-direction: row;">
+                <button
+                    style="border: none; padding: .5em; border-radius: .3em; background: transparent; font-size: 1.1em;"><i
+                        class="far fa-heart"></i></button>
+                <button
+                    style="border: none; padding: .5em; border-radius: .3em; background: transparent; font-size: 1.1em;"><i
+                        class="far fa-comment-alt"></i></button>
+            </div>
+            <button
+                style="border: none; padding: .5em; border-radius: .3em; background:transparent; font-size: 1.1em;"><i
+                    class="fas fa-chevron-left"></i></button>
+        </div>
+    </div>
+</body>
+
+</html>
