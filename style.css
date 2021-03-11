@@ -1,0 +1,7 @@
+.blur{
+    backdrop-filter: blur(25px)!important;
+}
+
+.rounded-1{
+    border-radius: 1rem !important;
+}
