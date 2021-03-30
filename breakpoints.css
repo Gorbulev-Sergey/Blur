@@ -1,0 +1,27 @@
+/*phone*/
+@media (min-width: 0px){
+    .block{
+        background: red;
+    }
+}
+
+/*laptop*/
+@media (min-width: 1024px){
+    .block{
+        background:orange;
+    }
+}
+
+/*dasktop*/
+@media (min-width: 1536px){
+    .block{
+        background:green;
+    }
+}
+
+/*4k*/
+@media (min-width: 3072px){
+    .block{
+        background:blue;
+    }
+}

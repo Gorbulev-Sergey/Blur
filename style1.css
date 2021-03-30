@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0,0,0,1);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.container .box{
+    position: relative;
+    width: 10rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 2rem;
+    transition: .5s;
+}
+
+.container .box::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    width: 12rem;
+    height: 100%;
+    background: white;
+    border-radius: .5rem;
+    transform: skewX(15deg) skewY(15deg);
+    transition: .5s;
+}
+
+.container .box::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    width: 12rem;
+    height: 100%;
+    background: white;
+    border-radius: .5rem;
+    transform: skewX(15deg) skewY(15deg);
+    filter: blur(1.5em);
+    transition: .5s;
+}
+
+.container .box:hover::before,
+.container .box:hover::after
+{
+    transform: skewX(0deg);
+}
+
+.container .box:hover .content
+{
+    transform: skewX(0deg);
+    left: 5rem;
+}
+
+.container .box:nth-child(1)::before,
+.container .box:nth-child(1)::after
+{
+    background: linear-gradient(315deg, #ffbc00,#ff0058);
+}
+
+.content{
+    /*display: none;*/
+    z-index: 1;    
+    transform: skewX(-15deg) skewY(-15deg) scale(.7);  
+    transition: .5s;
+    color: white;
+    padding: 3rem 2rem;
+    border-radius:.5em;
+    background:rgba(255,255,255,.1);
+    backdrop-filter: blur(2rem);
+}
+
+.container .box:hover .content{
+    transform:  skewX(0deg) scale(1);
+    perspective: -500px;
+    transition: .5s;
+}
